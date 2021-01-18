@@ -9,15 +9,21 @@ class Api::MoviesController < ApplicationController
     all_movies_results = HTTP.get("http://localhost:3000/api/all_movie_list")
   puts all_movies_results
   
-    end
+  end
 
-    def choose_a_movie
-    puts "Please choose a movie:"
-    user_choice = gets.chomp
-    @user_movie = Movie.find_by(title: user_choice.to_s)
-    select_movies_results = HTTP.get("http://localhost:3000/api/select_movie_list")
-    puts select_movies_results
-    render "select_movie.json.jb"
+  def choose_a_movie_query_parameter
+
+     user_choice = params["single_movie"]
+     @user_movie = Movie.find_by(title: user_choice)
+     select_movies_results = HTTP.get("http://localhost:3000/api/select_movie_list")
+     puts select_movies_results
+     render "select_movie.json.jb"
+   end
+   def choose_a_movie_segment_parameter
+      user_input = params[:wildcard]
+      @user_segment_movie = Movie.find_by(title: user_input)
+      render "select_query_movie.json.jb"
+    
    end
 end
 
