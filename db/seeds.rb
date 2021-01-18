@@ -8,3 +8,8 @@
 
 actor = Actor.new({first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock"})
 actor.save
+
+silence_of_the_lambs = Movie.new({title: "Silence of the Lambs", year: 1991, plot: "Clarice pairs up with a serial killer to hunt Buffalo Bill"})
+silence_of_the_lambs.save
+
+

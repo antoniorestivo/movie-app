@@ -6,4 +6,5 @@ class Api::ActorsController < ApplicationController
     @message = "Sanity Check"
     render "actor.json.jb"
   end
+ 
 end
