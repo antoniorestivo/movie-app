@@ -1,4 +1,0 @@
-{
-  message: "Sanity Check"
-  list: @user_movie
-}

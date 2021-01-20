@@ -1,5 +1,0 @@
-{
-  message: "Sanity Check"
-  list: @all_movies
-  ordered_list: @descending_movies
-}

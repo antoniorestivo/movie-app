@@ -1,4 +1,0 @@
-{
-  message: "Sanity Check"
-  movie: @user_segment_movie
-}
