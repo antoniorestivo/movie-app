@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   
-    
-    get "/actor_list" => "actors#sample_action"
-
-    get "/movies" => "movies#index"
+  namespace :api do
+    get '/actor_list' => 'actors#sample_action'
+    get '/movies' => 'movies#index'
+    post '/movies' => 'movies#create'
+  end
 
     
 
