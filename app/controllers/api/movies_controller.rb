@@ -3,6 +3,7 @@ class Api::MoviesController < ApplicationController
   
   def index #get all movies
     @movie = Movie.all
+    # intend to show all movies that are in english.
     render json: @movie
   end
   def create # post to create a movie

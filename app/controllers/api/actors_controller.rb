@@ -1,6 +1,7 @@
 class Api::ActorsController < ApplicationController
   def index
     @actors = Actor.all
+    #intend to sort actors by eldest to youngest here.
     render json: @actors
   end
   def create
