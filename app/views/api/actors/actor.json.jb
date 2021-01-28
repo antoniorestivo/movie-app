@@ -1,4 +1,4 @@
 {
-  message: @message
-  actor: @retrieved_actor
+  actor: @actors
+  #movie_plot: actor.movie.plot
 }
