@@ -2,7 +2,7 @@ class Api::ActorsController < ApplicationController
   def index
     @actors = Actor.all.order(age: :desc)
     #intend to sort actors by eldest to youngest here.
-    render  'actor.json.jb'
+    render  'index.json.jb'
   end
   def create
     @actor = Actor.new({

@@ -1,0 +1,4 @@
+{
+  actor: @actors
+  movie_plot: actor.movie.plot
+}
